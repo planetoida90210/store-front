@@ -4,6 +4,7 @@ import getCatgories from "@/actions/getCategories";
 
 import Container from "./ui/Container";
 import MainNav from "./MainNav";
+import NavbarActions from "./NavbarActions";
 
 export const revalidate = 0;
 
@@ -17,6 +18,7 @@ const Navbar = async () => {
             <p className="font-bold text-xl">Store</p>
           </Link>
           <MainNav data={categories} />
+          <NavbarActions />
         </div>
       </Container>
     </div>
